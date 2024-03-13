@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jey Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Custom style */
+        .accordion-button::after {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+          transform: scale(.7) !important;
+          
+        }
+        .accordion-button:not(.collapsed)::after {
+        
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-dark">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand custom-navbar-brand" href="#">
+                <img src="/images/Logo Vector.png" width="30" height="30" alt="">
+                Jey Angelo
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link custom-nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-nav-link" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link custom-nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <img class="jey" src="/images/Jey.png" alt="Picture of Jey Angelo">
+                <div class="row align-items-center" style="height: 80vh;">
+                    <div class="col-md-6 offset-md-8">
+                        <div class="vertical-center text-left">
+                            <p>Freelance</p>
+                            <p>UX/UI Designer & Developer</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="intro-container">
+                <p>Hey there, I'm <span class="name-tag">Jey Angelo</span>!</p>
+            </div>
+            <div>
+                <h5 class="text-wrap">A freelance UX/UI Designer & Developer dedicated to transforming visions into captivating digital experiences.</h5>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="approach-container"> 
+                <p class="approach-text">My approach to web development combines my passion for design, code, and interactions and I’m confident that our partnership will lead to a successful experience for you and your users!</p>
+            </div>
+            <div class="button-container">
+                <button href="#" type="button" class="button">About Me</button>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="accordion-button btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Project 1
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Accordion Text!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="accordion-button btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Project 2
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class=" card-body">
+              Accordion Text!
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="accordion-button btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Project 3
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              Accordion Text!
+            </div>
+          </div>
+          <div class="work-button-container">
+            <button href="#" type="button" class="button">More Work</button>
+        </div>
+        </div>
+      </div>
+      
+      <div>
+        <div class="cta-Container">
+            <div class="pb-16">
+                <h4 class="cta-Head">Here's How I can help...</h4>
+            </div>
+            <div class="">
+                <div class="card-Container">
+                    <div class="ctaCard">
+                        <div class="ctaCard-body">
+                            <span>01</span>
+                            <h5 class="ctaCard-title">Design</h5>
+                            <p class="ctaCard-text">Something about empathy driven research and design. Figma wireframing, prototyping user interviews and data collection</p>
+                        </div>
+                    </div>
+                    <div class="ctaCard">
+                        <div class="ctaCard-body">
+                            <span>02</span>
+                            <h5 class="ctaCard-title">Development</h5>
+                            <p class="ctaCard-text">Something about responsive scalable websites, micro animations and interactions, webflow and code.</p>
+                        </div>
+                    </div>
+                    <div class="ctaCard">
+                        <div class="ctaCard-body">
+                            <span>03</span>
+                            <h5 class="ctaCard-title">Full UX/UI Package</h5>
+                            <p class="ctaCard-text">Something about building a full website from the ground up, working alongside you and your users crafting modern and design driven websites and optimizing their SEO.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button href="#" type="button" class="button">Let's Chat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="footer-section">
+            <h1>Let's Make something Beautiful</h1>
+            <h2>Jey.Angelo.Designs@gmail.com</h2>
+            <button href="#" type="button" class="button">Get In Touch</button>
+            <div id="subFooter">
+                <span class="footerNote">code by Jey Angelo</span>
+                </div>
+      </footer>
+      
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
